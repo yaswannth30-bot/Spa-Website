@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relax Aura Spa</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: #f5f7fa;
+            color: #000;
+        }
+
+        /* HEADER */
+        header {
+            background: black;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.3em;
+        }
+
+        /* NAVBAR */
+        nav {
+            background: black;
+            text-align: center;
+            padding: 12px;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: gold;
+        }
+
+        /* HERO */
+        .hero {
+            text-align: center;
+            padding: 90px 20px;
+            background: url('https://images.unsplash.com/photo-1552693673-1bf958298935') no-repeat center/cover;
+            color: white;
+            position: relative;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .hero h2,
+        .hero p,
+        .hero button {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h2 {
+            font-size: 2.5em;
+        }
+
+        .hero button {
+            padding: 12px 25px;
+            border: none;
+            background: white;
+            color: black;
+            border-radius: 25px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        /* SECTIONS */
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        section h2 {
+            color: #1c1c1c;
+        }
+
+        /* SERVICES */
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        /* FOOTER */
+        footer {
+            background: #111;
+            color: #aaa;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Relax Aura Spa</h1>
+        <p>Relax Your Body, Refresh Your Mind</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="hero">
+        <h2>Luxury Spa & Wellness</h2>
+        <p>Experience ultimate relaxation</p>
+        <button>Book Now</button>
+    </div>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="services">
+            <div class="services">
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/18120174/pexels-photo-18120174.jpeg" width="100%"
+                        style="border-radius:10px;">
+                    <h3>Body Massage</h3>
+                </div>
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/6560339/pexels-photo-6560339.jpeg" width="100%"
+                        style="border-radius:10px;">
+                    <h3>Facial Therapy</h3>
+                </div>
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/3865489/pexels-photo-3865489.jpeg" width="100%"
+                        style="border-radius:10px;">
+                    <h3>Aromatherapy</h3>
+                </div>
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/33517865/pexels-photo-33517865.jpeg" width="100%"
+                        style="border-radius:10px;">
+                    <h3>Steam Bath</h3>
+                </div>
+            </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We provide premium spa treatments to help you relax, refresh, and rejuvenate your body and mind.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Phone: 9876543210</p>
+        <p>Location: Chennai</p>
+    </section>
+
+    <footer>
+        <p>© 2026 Relax Aura Spa</p>
+        <p>@ Website Artist</p>
+    </footer>
+
+</body>
+
+</html>
